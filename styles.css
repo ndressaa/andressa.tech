@@ -4,11 +4,11 @@
 }
 
 :root {
-  --dark-gray: #0D1017;
-  --medium-gray: #21262C;
-  --light-gray: #32373D;
-  --silver: #83888E;
-  --snow: #D1D6DC;
+  --dark-gray: #0d1017;
+  --medium-gray: #21262c;
+  --light-gray: #32373d;
+  --silver: #83888e;
+  --snow: #d1d6dc;
 }
 
 body {
@@ -16,28 +16,80 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   text-align: center;
-  height: 100vh;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
+  height: 100%;
+  min-height: 100vh;
 }
 
 main {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
+  gap: 32px;
+  width: 100%;
   height: 100%;
+  max-width: 375px;
+  margin: 4rem 0 3rem;
 }
 
-h1, footer {
+main > img {
+  width: 160px;
+  height: 160px;
+  border-radius: 16px;
+}
+
+section.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+h1 {
   color: var(--snow);
+  font-size: 2rem;
 }
 
-h3 {
+h2 {
   color: var(--silver);
   font-weight: normal;
+  font-size: 1.3rem;
+}
+
+section.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 275px;
+}
+
+section.links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: var(--snow);
+  text-decoration: none;
+  font-size: 1.2rem;
+  line-height: 2;
+  width: 100%;
+  height: 70px;
+  background: var(--light-gray);
+  border-radius: 16px;
+}
+
+section.links a img {
+  width: 1.2rem;
+  height: 1.2rem;
 }
 
 footer {
+  color: var(--snow);
   background: var(--medium-gray);
   border-top: 1px solid var(--light-gray);
   width: 100%;
